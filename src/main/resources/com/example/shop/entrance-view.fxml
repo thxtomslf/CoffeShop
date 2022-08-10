@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane prefHeight="452.0" prefWidth="448.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.shop.Controllers.EntranceController">
+    
+    <children>
+      <ImageView fitHeight="459.0" fitWidth="602.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/background.gif" />
+         </image>
+      </ImageView>
+      <VBox alignment="CENTER" prefHeight="472.0" prefWidth="679.0" spacing="10" style="-fx-font-weight: bold;">
+
+         <children>
+            <Label style="-fx-font-weight: bold;" text="Добро пожаловать в " textAlignment="CENTER" underline="true" wrapText="true">
+               <font>
+                  <Font size="22.0" />
+               </font></Label>
+            <Label text="открыты" textAlignment="CENTER">
+                <font>
+                    <Font size="16.0" />
+                </font></Label>
+            <ImageView fitHeight="126.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true" />
+             <HBox alignment="CENTER" prefHeight="54.0" prefWidth="673.0" spacing="40">
+               <children>
+                  <Button onMouseClicked="#knockDoor" mnemonicParsing="false" prefHeight="64.0" prefWidth="190.0" style="-fx-background-radius: 15; -fx-rotate: 15;" text="Постучать" />
+                  <Button onMouseClicked="#openBaristaMenu" mnemonicParsing="false" prefHeight="64.0" prefWidth="190.0" style="-fx-background-radius: 15;" text="Посмотреть меню" />
+               </children>
+             </HBox>
+         </children>
+      </VBox>
+   </children>
+
+</StackPane>
